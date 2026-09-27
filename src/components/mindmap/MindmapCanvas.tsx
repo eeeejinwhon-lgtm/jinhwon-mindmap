@@ -123,7 +123,7 @@ function FlowNode({ data }: NodeProps<FlowMindNode>) {
 
 const nodeTypes = { mindmap: FlowNode };
 
-function CircuitEdge({ sourceX, sourceY, targetX, targetY, style, className }: EdgeProps) {
+function CircuitEdge({ sourceX, sourceY, targetX, targetY, style, className }: EdgeProps & { className?: string }) {
   const midY = sourceY + (targetY - sourceY) / 2;
   const path = `M ${sourceX} ${sourceY} L ${sourceX} ${midY} L ${targetX} ${midY} L ${targetX} ${targetY}`;
   const isActive = className?.includes('is-active');
