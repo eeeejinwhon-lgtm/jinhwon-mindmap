@@ -1,0 +1,10 @@
+PUBLIC VIEWER BUILD
+- Edit controls are removed.
+- Data is fixed to the starter mindmap in src/lib/mindmap.ts.
+- Visitors can pan, zoom, search, click nodes, and read details.
+- No localStorage edits are used in this public version.
+
+Vercel settings:
+Framework: Vite
+Build command: npm run build
+Output directory: dist
